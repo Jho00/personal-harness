@@ -51,5 +51,3 @@ npx skills add Jho00/personal-harness --skill tool-finder --copy
 Общий журнал по умолчанию хранится вне Git в `~/.local/share/personal-harness/tool-finder/`. Каталог переопределяется через `TOOL_FINDER_LOG_DIR` или `--log-dir`. Скрипт требует Python 3.9+ без сторонних библиотек. Для просмотра: `python3 /path/to/tool-finder/scripts/usage_log.py summary`. Подробности записи, ограничения облачных сред и переноса между компьютерами: [правила журнала](skills/tool-finder/references/journal.md). Он учитывает только наблюдавшиеся или подтверждённые применения, а не автоматически следит за всеми чатами.
 
 Для периодического разбора попроси: `$tool-finder Разбери журнал и предложи повторяющиеся сценарии`. Частота рекомендаций отделена от частоты использования.
-
-Проверки: `python3 -m unittest discover -s evals/tool-finder -v`; [сценарии оценки](evals/tool-finder/scenarios.md).
